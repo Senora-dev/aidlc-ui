@@ -1,0 +1,33 @@
+# Report-only: probes the newest AI-DLC stable and preview releases.
+# It never changes dependencies, code, or releases. A failure is a signal to look.
+name: upstream-compat
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      versions:
+        description: "Comma-separated tags (optional), e.g. v2.11.4,v2.10.0"
+        required: false
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Probe upstream releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "${{ inputs.versions }}" ]; then
+            node scripts/upstream-compat.mjs --versions "${{ inputs.versions }}" | tee report.txt
+          else
+            node scripts/upstream-compat.mjs | tee report.txt
+          fi
+      - name: Job summary
+        if: always()
+        run: { echo '```'; cat report.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

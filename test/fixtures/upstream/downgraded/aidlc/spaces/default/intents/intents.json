@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "01a1ded2-7422-715b-b23c-b25269f0139a",
+    "slug": "csv-export-timeout",
+    "dirName": "261115-csv-export-timeout",
+    "scope": "bugfix",
+    "status": "archived",
+    "request": "49789336"
+  },
+  {
+    "uuid": "01a1ded3-bbd0-76f1-9893-cecf7e535aa9",
+    "slug": "version-flag",
+    "dirName": "261115-version-flag",
+    "scope": "express",
+    "status": "complete",
+    "request": "9a0d8b25"
+  },
+  {
+    "uuid": "01a1ded4-5e11-7aa2-8583-b4b79b8bd724",
+    "slug": "inventory-api",
+    "dirName": "261115-inventory-api",
+    "scope": "classic",
+    "status": "archived",
+    "request": "597ed4a8"
+  }
+]

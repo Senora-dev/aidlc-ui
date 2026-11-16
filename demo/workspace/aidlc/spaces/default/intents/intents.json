@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "01a1def2-7ce5-74bc-852e-75c72f0e56d6",
+    "slug": "markdown-export",
+    "dirName": "261115-markdown-export",
+    "scope": "express",
+    "status": "complete",
+    "request": "a21e66d6"
+  },
+  {
+    "uuid": "01a1def2-c4aa-7699-b6cc-c6818b8a838f",
+    "slug": "offline-sync",
+    "dirName": "261115-offline-sync",
+    "scope": "classic",
+    "status": "in-flight",
+    "request": "23f666fe"
+  },
+  {
+    "uuid": "01a1def3-17ae-78f8-9e3e-dd3e497bed74",
+    "slug": "duplicate-notes",
+    "dirName": "261115-duplicate-notes",
+    "scope": "bugfix",
+    "status": "in-flight",
+    "request": "7e1d2e05"
+  }
+]
