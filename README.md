@@ -58,7 +58,7 @@ The npm name `aidlc-ui` was unclaimed when this was written, but **the package i
 published yet**. Until it is, install from source:
 
 ```bash
-git clone <this repository> aidlc-ui
+git clone https://github.com/Senora-dev/aidlc-ui.git
 cd aidlc-ui
 npm ci
 npm run build
@@ -139,4 +139,4 @@ demo mode on every page, and demo data is kept separate from your workspaces.
 
 ---
 
-Created by Shaked Braimok Yosef · Built at Senora
+Created by Shaked Braimok Yosef · Built at Senora.dev
